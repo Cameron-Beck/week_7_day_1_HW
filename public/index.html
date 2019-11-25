@@ -22,7 +22,9 @@
     <form v-on:submit.prevent="saveNewItem">
       <label for ="new-item">Add a new item: </label>
       <input type="text" id="new-item" v-model="newItem">
-      <input type="radio" id="item-priority" v-model="item-priority">
+      <input type="radio" name="new-priority" value="low" v-model="NewPriority"> low<br>
+      <input type="radio" name="new-priority" value="medium" v-model="NewPriority"> medium<br>
+      <input type="radio" name="new-priority" value="high" v-model="NewPriority"> high<br>
       <input type="submit" id="new-item" value="save new item">
     </form>
   </div>

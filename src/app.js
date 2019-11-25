@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
       items:[
             {name: 'Food Shop', isCompleted: true, priority: 'high'},
             {name: 'Hoover', isCompleted: true, priority: 'low'},
-            {name: 'Gym', isCompleted: false, priority: 'very low'}
+            {name: 'Gym', isCompleted: false, priority: 'medium'}
             ],
       newItem: "",
       priority: ""
@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
       saveNewItem: function (){
         this.items.push({
         name: this.newItem,
-        isCompleted: false
+        isCompleted: false,
+        priority: this.NewPriority
       });
         this.newItem = "";
       },

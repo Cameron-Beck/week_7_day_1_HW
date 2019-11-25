@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     el: "#app",
     data: {
       items:[
-            {name: 'Food Shop', isCompleted: true},
-            {name: 'Hoover', isCompleted: true},
-            {name: 'Gym', isCompleted: false}
+            {name: 'Food Shop', isCompleted: true, priority: 'high'},
+            {name: 'Hoover', isCompleted: true, priority: 'low'},
+            {name: 'Gym', isCompleted: false, priority: 'very low'}
             ],
-      newItem: ""
+      newItem: "",
+      priority: ""
     },
     methods: {
       saveNewItem: function (){

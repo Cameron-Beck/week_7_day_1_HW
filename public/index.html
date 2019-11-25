@@ -12,7 +12,7 @@
 <body>
   <div id="app">
     <ul>
-      <li v-for="(item, index, priority) in items" v-bind:class="item.isCompleted ? 'completed' : 'not-completed'">{{ item.name }}
+      <li v-for="(item, index, priority) in items" v-bind:class="item.isCompleted ? 'completed' : 'not-completed'" v-bind:class="item.priority ? 'high' : 'low'">{{ item.name }}
       <span>priority: {{ item.priority }}</span>
       <span v-if="item.isCompleted">Completed!</span>
 
